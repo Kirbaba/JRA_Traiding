@@ -1,0 +1,64 @@
+.fotorama__arr {
+	width: 30px!important;
+	height: 54px!important;
+	background: url("../img/arrow395-next.png")!important;
+	background-repeat: no-repeat!important;
+	display: block!important;
+	-webkit-background-size: contain!important;
+	     -o-background-size: contain!important;
+	        background-size: contain!important;
+	
+	&--next {
+		opacity: 1!important;
+		display: block!important;
+		transform: none!important;
+		right: 3%!important;		
+	}
+	&--prev {
+		opacity: 1!important;
+		display: block!important;
+		transform: none!important;
+		background: url("../img/arrow395.png")!important;
+		background-repeat: no-repeat!important;
+		left: 3%!important;
+		-webkit-background-size: contain!important;
+		     -o-background-size: contain!important;
+		        background-size: contain!important;
+	}
+
+	&--disabled {
+		display: block!important;
+		opacity: 0!important;
+	}
+}
+
+.fotorama__wrap--no-controls.fotorama__wrap--toggle-arrows .fotorama__arr, 
+.fotorama__wrap--no-controls.fotorama__wrap--toggle-arrows .fotorama__fullscreen-icon {
+	opacity: 1!important;
+}
+
+.fotorama__wrap--css3.fotorama__wrap--no-controls.fotorama__wrap--slide.fotorama__wrap--toggle-arrows .fotorama__arr--prev {
+	-webkit-transform: none;
+	   -moz-transform: none;
+	    -ms-transform: none;
+	     -o-transform: none;
+	        transform: none;
+}
+
+
+.fotorama__arr {
+	&--prev {
+		.fotorama__arr--disabled {
+			display: block!important;
+		}
+	}
+}
+.fotorama__arr.fotorama__arr--next.fotorama__arr--disabled {
+	display: block!important;
+	opacity: 1!important;
+}
+
+.fotorama__arr.fotorama__arr--prev.fotorama__arr--disabled {
+	display: block!important;
+	opacity: 1!important;
+}
