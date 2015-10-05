@@ -270,6 +270,65 @@ a#go_about {
       left: 30px;
       z-index: 99; }
 
+.order {
+  background-image: url("../img/contact-bg.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding: 150px 0 90px; }
+  .order h5 {
+    color: #303139;
+    font-family: "HelveticaNeueCyrBold";
+    font-size: 23px; }
+  .order p {
+    color: #23272b;
+    font-size: 16px;
+    font-family: "HelveticaNeueCyrMedium"; }
+  .order small {
+    color: #6bace7;
+    margin-top: 10px;
+    font-size: 12px;
+    display: block;
+    float: left; }
+  .order__form {
+    background-color: #FFF;
+    display: block;
+    padding: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    margin-top: 25px; }
+    .order__form--input {
+      border: none;
+      outline: none;
+      height: 45px;
+      line-height: 45px;
+      padding: 0 15px;
+      font-size: 16px; }
+    .order__form--sub {
+      border: none;
+      outline: none;
+      height: 45px;
+      -webkit-border-radius: 3px/3px 3px 3px 3px;
+      -moz-border-radius: 3px/3px 3px 3px 3px;
+      -ms-border-radius: 3px/3px 3px 3px 3px;
+      border-radius: 3px/3px 3px 3px 3px;
+      -o-background-clip: padding-box;
+      background-clip: padding-box;
+      background-color: #6aace7;
+      width: 80%;
+      display: block;
+      float: right;
+      text-transform: uppercase;
+      color: #FFF;
+      font-size: 16px;
+      font-family: "HelveticaNeueCyrMedium"; }
+      .order__form--sub:hover {
+        background-color: #3e94e0; }
+
 @media only screen and (max-width: 400px) {
   .services--desc-1:before {
     content: "";
