@@ -54,3 +54,9 @@ $(function() {
     });
 });
 
+jQuery(document).ready(function($) {
+    $('.services--img').each(function(){
+        $(this).css('height', $(this).width());
+        $('.services--desc').css('height', $(this).height());
+    });
+});

@@ -1,0 +1,155 @@
+.about {
+	padding: 90px 0;
+	background-color: #FBFBFB;
+	background-image: url('../img/Vector-Smart Object.png');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	-webkit-background-size: 50%;
+	     -o-background-size: 50%;
+	        background-size: 50%;
+	&__tittle {
+		margin-bottom: 70px;
+	}
+	&__img-lg {
+		display: inline-block;
+		position: relative;
+		padding-bottom: 80px;
+		img {
+			width: 90%;
+			float: right;
+		}		
+	}
+	&__img-sm {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 40%;
+		img {
+			width: 100%;
+		}
+	}
+	&__desc {
+		margin-top: 100px;
+		p {
+			font-family: $m;
+		}
+	}
+}
+
+.services {
+	padding: 90px 0;
+	&__box {
+		margin: 50px 0;
+	}
+	img {
+		width: 100%;
+	}
+	p {
+		font-size: 16px;
+		text-align: center;
+	}
+	h4 {
+		font-size: 29px;
+		text-align: center;
+		margin: 0 0 10px 0;
+	}
+	&--desc {
+		display: block;
+		position: relative;
+		padding-top: 15%;
+		&-1 {
+			&:before {
+				content: "";
+				width: 0;
+				height: 0;
+				border-top: 10px solid transparent;
+				border-right: 15px solid #fff;
+				border-bottom: 10px solid transparent;
+				position: absolute;
+				left: -30px;
+				bottom: 30px;
+				z-index: 99;
+			}
+		}
+		&-2 {
+			&:before {
+				content: "";
+				width: 0;
+				height: 0;
+				border-top: 10px solid transparent;
+				border-left: 15px solid #fff;
+				border-bottom: 10px solid transparent;
+				position: absolute;
+				right: -30px;
+				top: 30px;
+				z-index: 99;
+			}
+		}
+		&-3 {
+			&:before {
+				content: "";
+				width: 0;
+				height: 0;
+				border-left: 10px solid transparent;
+				border-bottom: 15px solid #fff;
+				border-right: 10px solid transparent;
+				position: absolute;
+				top: -15px;
+				left: 30px;
+				z-index: 99;
+			}
+		}
+		&-4 {
+			
+			&:before {
+				content: "";
+				width: 0;
+				height: 0;
+				border-left: 10px solid transparent;
+				border-top: 15px solid #fff;
+				border-right: 10px solid transparent;
+				position: absolute;
+				bottom: -15px;
+				left: 30px;
+				z-index: 99;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 400px) {
+   	
+	.services--desc-1 {
+		&:before {
+			content: "";
+			width: 0;
+			height: 0;
+			border-left: 10px solid transparent;
+			border-bottom: 15px solid #fff;
+			border-right: 10px solid transparent;
+			position: absolute;
+			top: -25px;
+			left: 30px;
+			bottom: inherit;				
+			z-index: 99;
+		}
+	}
+	.services--desc-2 {		
+		&:before {
+			content: "";
+			width: 0;
+			height: 0;
+			border-left: 10px solid transparent;
+			border-top: 15px solid #fff;
+			border-right: 10px solid transparent;
+			position: absolute;
+			bottom: -25px;
+			left: 30px;
+			z-index: 99;
+			top: inherit;
+		}
+	}		
+	
+  
+}
