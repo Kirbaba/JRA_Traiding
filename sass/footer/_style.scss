@@ -1,0 +1,17 @@
+.footer {
+	display: block;
+	float: left;
+	width: 100%;
+	position: relative;
+	padding: 40px 0;
+	background-color: #70A0CC;
+	&__logo {
+		img {
+			width: 100%;
+		}
+	}
+	p {
+		font-size: 14px;
+		color: #FFF;
+	}
+}

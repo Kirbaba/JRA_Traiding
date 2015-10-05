@@ -250,11 +250,11 @@ but thereis still several very important points:</h3>
 
 		<section class="contacts">
 			<div class="container">
-				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-					<h4>Hong Kong +852 60655860   </h4>
+				<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+					<h4 class="al">Hong Kong +852 60655860   </h4>
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-offset-4 col-md-offset-4">
-					<h4>Guangzhou  +86 13640885511</h4>
+				<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 col-lg-offset-4 col-md-offset-4 col-sm-offset-2">
+					<h4 class="ar">Guangzhou  +86 13640885511</h4>
 				</div>
 				<h1 class="block_title">Contacts</h1>
 					<h3 class="block_descript">We are located in Guangzhou, the center of world production and trade. <br>
@@ -274,7 +274,7 @@ but thereis still several very important points:</h3>
 						</div>
 						<div class="row">
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-								<textarea class="contacts--text" placeholder="Сообщение"></textarea>
+								<textarea class="contacts--text" row="1" placeholder="Сообщение"></textarea>
 							</div>
 						</div>
 	                    
@@ -289,7 +289,28 @@ but thereis still several very important points:</h3>
 			</div>
 		</section>
 
+<div class="row">
+		<footer class="footer">
 
+
+			<div class="container">
+				
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<p>广州市海珠区宝岗大道中润田雅苑B602 <br>
+B-602 , Runtian bldg , Baogang road , Haizhu district , Guangzhou , China</p>
+					<p>Hong Kong: +852 60655860  <br>
+Mainland ( Guangzhou ): +86 13640885511</p>
+					<p>Email: inquiries@jraltd.net</p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-lg-offset-3 col-md-offset-3 col-sm-12 col-xs-12">
+					<div class="footer__logo">
+						<img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="">
+					</div>
+					</div>
+				</div>
+			
+		</footer>
+		</div>
 </div>
     </div>
 <?php wp_footer(); ?>

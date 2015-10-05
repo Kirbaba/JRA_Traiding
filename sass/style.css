@@ -114,6 +114,12 @@ b {
 .blue {
   color: #1795e3; }
 
+.al {
+  text-align: left; }
+
+.ar {
+  text-align: right; }
+
 @media (min-width: 1200px) {
   .container {
     width: 1170px; } }
@@ -466,6 +472,33 @@ a#go_about {
     bottom: -25px;
     left: 30px;
     z-index: 99;
-    top: inherit; } }
+    top: inherit; }
+
+  .contacts h4 {
+    font-size: 18px; }
+
+  .ar, .al {
+    text-align: center; }
+
+  .order__form--sub {
+    width: 100%; } }
+@media only screen and (max-width: 770px) {
+  .order__form--sub {
+    width: 100%; }
+
+  .contacts h4 {
+    font-size: 20px; } }
+.footer {
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative;
+  padding: 40px 0;
+  background-color: #70A0CC; }
+  .footer__logo img {
+    width: 100%; }
+  .footer p {
+    font-size: 14px;
+    color: #FFF; }
 
 /*# sourceMappingURL=style.css.map */

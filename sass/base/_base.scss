@@ -53,6 +53,13 @@ b {
 	color: $blue;
 }
 
+.al {
+	text-align: left;
+}
+.ar {
+	text-align: right;
+}
+
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
