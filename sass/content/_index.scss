@@ -233,8 +233,68 @@
 	img {
 		width: auto;
 		display: block;
-		margin: 0 auto;
+		margin: 10px auto;
 		line-height: 34px;
+		
+	}
+}
+
+.contacts {
+	display: block;
+	float: left;
+	width: 100%;
+	position: relative;
+	padding: 25px 0 90px;
+	h4 {
+		color: #ababab;
+		font-family:$th;
+		font-size: 25px;
+	}
+	&--input {
+		display: block;
+		width: 100%;
+		height: 36px;
+		padding: 0 15px;
+		line-height: 36px;
+		margin: 20px 0;
+		border: none;
+		border-bottom: 2px solid #aeacac;
+		color: #525252;
+		font-size: 15px;
+		outline: none;
+		position: relative;		
+	}
+	&--text {
+		display: block;
+		width: 100%;
+		line-height: 36px;
+		height: 36px;
+		padding: 0 15px;
+		margin: 50px 0 20px;
+		border: none;
+		border-bottom: 2px solid #aeacac;
+		resize: none;
+		outline: none;
+		color: #525252;
+		font-size: 15px;	
+	}
+ 	&--sub {
+		display: block;
+		width: 100%;
+		text-align: center;
+		height: 40px;
+		background-color: rgba(255, 255, 255, 0);
+		@include transition(0.3s);
+		border: 1px solid #43D9E5;
+		margin: 20px 0 20px 0;
+		font-size: 15px;
+		outline: none;
+		color: #525252;
+		cursor: pointer;
+		&:hover, &:active, &:focus {
+			background-color: #43D9E5;
+			color: #fff;
+		}
 	}
 }
 
