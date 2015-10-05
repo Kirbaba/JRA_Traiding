@@ -7,6 +7,9 @@
 	-webkit-background-size: 50%;
 	     -o-background-size: 50%;
 	        background-size: 50%;
+	display: block;
+    float: left;
+    width: 100%;
 	&__tittle {
 		margin-bottom: 70px;
 	}
@@ -39,6 +42,9 @@
 
 .services {
 	padding: 90px 0;
+	display: block;
+    float: left;
+    width: 100%;
 	&__box {
 		margin: 50px 0;
 	}
@@ -126,6 +132,9 @@
 	        background-size: cover;
 	background-position: 50% 50%;
 	padding: 150px 0 90px;
+    display: block;
+    float: left;
+    width: 100%;
 	h5 {
 		color: #303139;
 		font-family: $b;
@@ -170,11 +179,62 @@
 			text-transform: uppercase;
 			color: #FFF;
 			font-size: 16px;
-			font-family: $m;
+			font-family: $l;
 			&:hover {
 				background-color: darken(#6aace7, 10%);
 			}
 		}
+	}
+}
+
+.benefits {
+	display: block;
+	float: left;
+	width: 100%;
+	position: relative;
+	padding: 90px 0;
+	&__item {
+		margin: 25px 0;
+		padding: 15px 0;
+		&-icon {
+			display: block;
+			margin: 15px auto;
+			width: 199px;
+			height: 199px;
+			padding: 45px 0;
+			@include border-radius(100px);
+			@include background-clip(padding-box);
+			background-color: #6fa7db;
+			img {
+				display: block;
+				margin: 0 auto;				
+			}
+		}
+		h4 {
+			text-align: center;
+			font-family: $b;
+			font-size: 23px;
+			
+		}
+		p {
+			text-align: center;
+			font-size: 13px;
+		}
+	}
+}
+
+.partners {
+	display: block;
+	float: left;
+	width: 100%;
+	position: relative;
+	background-color: $blue;
+	padding: 50px 0;
+	img {
+		width: auto;
+		display: block;
+		margin: 0 auto;
+		line-height: 34px;
 	}
 }
 

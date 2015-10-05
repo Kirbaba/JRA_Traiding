@@ -185,7 +185,10 @@ a#go_about {
   background-repeat: no-repeat;
   -webkit-background-size: 50%;
   -o-background-size: 50%;
-  background-size: 50%; }
+  background-size: 50%;
+  display: block;
+  float: left;
+  width: 100%; }
   .about__tittle {
     margin-bottom: 70px; }
   .about__img-lg {
@@ -209,7 +212,10 @@ a#go_about {
       font-family: "HelveticaNeueCyrMedium"; }
 
 .services {
-  padding: 90px 0; }
+  padding: 90px 0;
+  display: block;
+  float: left;
+  width: 100%; }
   .services__box {
     margin: 50px 0; }
   .services img {
@@ -277,7 +283,10 @@ a#go_about {
   -o-background-size: cover;
   background-size: cover;
   background-position: 50% 50%;
-  padding: 150px 0 90px; }
+  padding: 150px 0 90px;
+  display: block;
+  float: left;
+  width: 100%; }
   .order h5 {
     color: #303139;
     font-family: "HelveticaNeueCyrBold";
@@ -325,9 +334,55 @@ a#go_about {
       text-transform: uppercase;
       color: #FFF;
       font-size: 16px;
-      font-family: "HelveticaNeueCyrMedium"; }
+      font-family: "HelveticaNeueCyrLight"; }
       .order__form--sub:hover {
         background-color: #3e94e0; }
+
+.benefits {
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative;
+  padding: 90px 0; }
+  .benefits__item {
+    margin: 25px 0;
+    padding: 15px 0; }
+    .benefits__item-icon {
+      display: block;
+      margin: 15px auto;
+      width: 199px;
+      height: 199px;
+      padding: 45px 0;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      -ms-border-radius: 100px;
+      border-radius: 100px;
+      -o-background-clip: padding-box;
+      background-clip: padding-box;
+      background-color: #6fa7db; }
+      .benefits__item-icon img {
+        display: block;
+        margin: 0 auto; }
+    .benefits__item h4 {
+      text-align: center;
+      font-family: "HelveticaNeueCyrBold";
+      font-size: 23px; }
+    .benefits__item p {
+      text-align: center;
+      font-size: 13px; }
+
+.partners {
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative;
+  background-color: #1795e3;
+  padding: 50px 0; }
+  .partners img {
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    line-height: 34px; }
 
 @media only screen and (max-width: 400px) {
   .services--desc-1:before {

@@ -54,8 +54,6 @@
 
 		
 		<section class="about">
-			
-
 				<div class="about__tittle">
 					<h1 class="block_title">About company</h1>
 					<h3 class="block_descript">Our customers trust us and, therefore, earn with us.</h3>
@@ -185,6 +183,69 @@
 					</div>
 				</div>			
 		</section>
+
+		<section class="benefits">
+			<div class="container">
+				<h1 class="block_title">Benefits</h1>
+				<h3 class="block_descript">Our experience and reputation - this is most important,<br> 
+but thereis still several very important points:</h3>
+				<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							<div class="benefits__item">
+								<div class="benefits__item-icon">
+									<img src="<?php bloginfo('template_directory'); ?>/img/i1.png" alt="">
+								</div>
+								<h4>The head office of <br> service in China</h4>
+								<p>Guangzhou - a worldwide manufacturing center and our main area. In our database, tens of thousands of factories and proven suppliers, we are willing to share their experience and arrange for delivery from China.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							<div class="benefits__item">
+								<div class="benefits__item-icon">
+									<img src="<?php bloginfo('template_directory'); ?>/img/i4.png" alt="">
+								</div>
+								<h4>Legal security</h4>
+								<p>With Chinese suppliers , we conclude a contract for the supply of local and all norms of international law. We work in a legal framework, which reduces your risk to almost zero. JRA Trading - a reliable intermediary in China.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							<div class="benefits__item">
+								<div class="benefits__item-icon">
+									<img src="<?php bloginfo('template_directory'); ?>/img/i5.png" alt="">
+								</div>
+								<h4>Integrated services</h4>
+								<p>Our service is built this way: the more services you give us a service, the more time you can devote to your business. All the processes of service, prepared for the different levels of the company. FEA Outsourcing - it is profitable, safe and convenient!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="partners">
+			<div class="container">
+				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+					<img src="<?php bloginfo('template_directory'); ?>/img/slack.png" alt="">
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+					<img src="<?php bloginfo('template_directory'); ?>/img/adobe.png" alt="">
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+					<img src="<?php bloginfo('template_directory'); ?>/img/google.png" alt="">
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+					<img src="<?php bloginfo('template_directory'); ?>/img/facebook.png" alt="">
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+					<img src="<?php bloginfo('template_directory'); ?>/img/spotify.png" alt="">
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+					<img src="<?php bloginfo('template_directory'); ?>/img/nice.png" alt="">
+				</div>
+			</div>
+		</section>
+
 
 </div>
     </div>
