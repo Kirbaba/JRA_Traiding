@@ -60,6 +60,15 @@ b {
 	text-align: right;
 }
 
+.hidden{
+	opacity: 0;
+}
+
+.visible{
+	visibility: visible!important;
+	opacity: 1;
+}
+
 @media (min-width: 1200px) {
   .container {
     width: 1170px;

@@ -37,10 +37,10 @@
 					    <!-- Collect the nav links, forms, and other content for toggling -->
 					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">		      	     
 					      <ul class="nav navbar-nav navbar-right navigation__list">		      
-					        <li><a href="#go_about">About</a></li>
-					        <li><a href="#go_serv">Services</a></li>
-					        <li><a href="#go_ben">Benefits</a></li>
-					        <li><a href="#go_cont">Contacts</a></li>
+					        <li><a href="#go_about" class="smoothScroll">About</a></li>
+					        <li><a href="#go_serv" class="smoothScroll">Services</a></li>
+					        <li><a href="#go_ben" class="smoothScroll">Benefits</a></li>
+					        <li><a href="#go_cont" class="smoothScroll">Contacts</a></li>
 					        <li><a href="#" class="write_us" data-toggle="modal" data-target="#myModal">Write Us</a></li>  		       
 					      </ul>
 					    </div><!-- /.navbar-collapse -->
@@ -296,7 +296,7 @@ but thereis still several very important points:</h3>
 					<h3 class="block_descript">We are located in Guangzhou, the center of world production and trade. <br>
 						Write your question or a brief description of the situation. <br>
 					We very quickly get back to you :)</h3>
-					<div class="row">
+					<div class="row contacts__animated">
 						<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
 					<form action="#">
 						<div class="row">

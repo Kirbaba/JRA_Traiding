@@ -65,6 +65,50 @@ $(function() {
             //$(".navigation").css('display', 'none')   
             $(".navigation").fadeOut("slow");      
         }
+
+     $('.about__desc').each(function(){
+        var imagePos2 = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+            if (imagePos2-400 < topOfWindow) {  
+                $(this).addClass("animated");            
+                $(this).addClass("visible");
+                $(this).addClass("fadeInLeft");           
+            }
+        });
+
+      $('.services__box').each(function(){
+        var imagePos3 = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+            if (imagePos3-400 < topOfWindow) {  
+                $(this).addClass("animated");            
+                $(this).addClass("visible");
+                $(this).addClass("fadeIn");          
+            }
+        });
+
+      $('.benefits__item').each(function(){
+        var imagePos4 = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+            if (imagePos4-400 < topOfWindow) {  
+                $(this).addClass("animated");   
+                $(this).addClass("visible");         
+                $(this).addClass("fadeInUp");          
+            }
+        });
+
+      $('.contacts__animated').each (function() {
+        var imagePos4 = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+            if (imagePos4-300 < topOfWindow) {  
+                $(this).addClass("animated");  
+                $(this).addClass("visible");          
+                $(this).addClass("fadeIn");          
+            }
+      });
     });
 });
 
@@ -75,3 +119,10 @@ jQuery(document).ready(function($) {
     });
 
 });
+
+$(function(){
+    $('.block_title').each(function() {
+        $(this).fadeIn("slow");
+    });
+});
+
