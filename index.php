@@ -37,11 +37,11 @@
 					    <!-- Collect the nav links, forms, and other content for toggling -->
 					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">		      	     
 					      <ul class="nav navbar-nav navbar-right navigation__list">		      
-					        <li><a href="#">Главная</a></li>
-					        <li><a href="#">Акции</a></li>
-					        <li><a href="#">Статьи</a></li>
-					        <li><a href="#">Отзывы</a></li>
-					        <li><a href="#">Подписка</a></li>  		       
+					        <li><a href="#go_about">About</a></li>
+					        <li><a href="#go_serv">Services</a></li>
+					        <li><a href="#go_ben">Benefits</a></li>
+					        <li><a href="#go_cont">Contacts</a></li>
+					        <li><a href="#" class="write_us" data-toggle="modal" data-target="#myModal">Write Us</a></li>  		       
 					      </ul>
 					    </div><!-- /.navbar-collapse -->
     				<!-- </div> -->
@@ -87,6 +87,7 @@
 		
 		<section class="about">
 				<div class="about__tittle">
+					<a name="go_about" id="go_about"></a>
 					<h1 class="block_title">About company</h1>
 					<h3 class="block_descript">Our customers trust us and, therefore, earn with us.</h3>
 				</div>
@@ -119,6 +120,7 @@
     	
 		<section class="services">			
 			<div class="container">
+				<a name="go_serv" id="go_serv"></a>
 				<h1 class="block_title">Services</h1>
 				<h3 class="block_descript">All services of the service are divided into four main divisions,
 				click on the section you are interested. Welcome to China!</h3>
@@ -218,6 +220,7 @@
 
 		<section class="benefits">
 			<div class="container">
+				<a name="go_ben" id="go_ben"></a>
 				<h1 class="block_title">Benefits</h1>
 				<h3 class="block_descript">Our experience and reputation - this is most important,<br> 
 but thereis still several very important points:</h3>
@@ -282,6 +285,7 @@ but thereis still several very important points:</h3>
 
 		<section class="contacts">
 			<div class="container">
+				<a name="go_acont" id="go_cont"></a>
 				<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
 					<h4 class="al">Hong Kong +852 60655860   </h4>
 				</div>
@@ -297,16 +301,16 @@ but thereis still several very important points:</h3>
 					<form action="#">
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-								<input type="text" class="contacts--input" placeholder="Ваше имя">								
+								<input type="text" class="contacts--input" placeholder="Your Name">								
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-								<input type="text" class="contacts--input" placeholder="email">
+								<input type="text" class="contacts--input" placeholder="Email">
 							</div>
 
 						</div>
 						<div class="row">
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-								<textarea class="contacts--text" row="1" placeholder="Сообщение"></textarea>
+								<textarea class="contacts--text" row="1" placeholder="Message"></textarea>
 							</div>
 						</div>
 	                    
@@ -343,8 +347,51 @@ Mainland ( Guangzhou ): +86 13640885511</p>
 			
 		</footer>
 		</div>
-</div>
+	</div>
     </div>
+
+	<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="block_descript" id="myModalLabel">Write Us</h3>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+						<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+					<form action="#">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+								<input type="text" class="contacts--input" placeholder="Your Name">								
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+								<input type="text" class="contacts--input" placeholder="Email">
+							</div>
+
+						</div>
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<textarea class="contacts--text" row="1" placeholder="Message"></textarea>
+							</div>
+						</div>
+	                    
+	                    <div class="row">
+		                    <div class="col-lg-3 col-lg-offset-6 col-md-3 col-md-offset-7 col-sm-4 col-xs-4 col-sm-offset-4 col-xs-offset-4">
+		                    	<input type="submit" class="contacts--sub" value="Send">
+		                    </div>  
+		                     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+		                    	<button type="button" class="btn btn-default contacts--sub" data-dismiss="modal">Close</button>
+		                    </div>
+	                    </div>
+		                   
+	                    </div>
+	                </form>
+	            </div>
+    		</div>
+  </div>
+</div>
 <?php wp_footer(); ?>
 </body>
 </html>
