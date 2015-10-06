@@ -14,7 +14,39 @@
 <body>
     <div class="container-fluid">
     	<div class="row">
-    	
+    		<nav class="navbar navbar-default navbar-fixed-top navigation" role="navigation">
+    			<div class="container">
+    				<!-- <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+    					
+    				</div> -->
+    				<!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> -->
+    					 <!-- Brand and toggle get grouped for better mobile display -->
+					    <div class="navbar-header">
+					      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>	
+							<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">	
+							<div class="header__logo">
+								<img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="">
+							</div>      
+							</div>
+					    </div>
+					    <!-- Collect the nav links, forms, and other content for toggling -->
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">		      	     
+					      <ul class="nav navbar-nav navbar-right navigation__list">		      
+					        <li><a href="#">Главная</a></li>
+					        <li><a href="#">Акции</a></li>
+					        <li><a href="#">Статьи</a></li>
+					        <li><a href="#">Отзывы</a></li>
+					        <li><a href="#">Подписка</a></li>  		       
+					      </ul>
+					    </div><!-- /.navbar-collapse -->
+    				<!-- </div> -->
+    			</div>
+    		</nav>
 	    	<header class="header">
 	    		<div class="container">
 					<div class="row">

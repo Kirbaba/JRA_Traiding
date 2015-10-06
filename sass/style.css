@@ -148,6 +148,14 @@ a#go_about {
   position: relative;
   top: -110px; }
 
+.navigation {
+  display: none;
+  padding: 10px 0;
+  font-family: "HelveticaNeueCyrLight";
+  font-size: 18px; }
+  .navigation .navbar-toggle {
+    margin: 0 10px; }
+
 .header {
   padding: 90px 0;
   background-image: url("../img/head_bg.png");
@@ -416,7 +424,6 @@ a#go_about {
   .contacts--text {
     display: block;
     width: 100%;
-    line-height: 36px;
     height: 36px;
     padding: 0 15px;
     margin: 50px 0 20px;
@@ -447,7 +454,17 @@ a#go_about {
       background-color: #43D9E5;
       color: #fff; }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 770px) {
+  .order__form--sub {
+    width: 100%; }
+
+  .contacts h4 {
+    font-size: 20px; }
+
+  .navbar-header {
+    max-width: 30%;
+    padding-top: 10px; } }
+@media only screen and (max-width: 480px) {
   .services--desc-1:before {
     content: "";
     width: 0;
@@ -481,13 +498,15 @@ a#go_about {
     text-align: center; }
 
   .order__form--sub {
-    width: 100%; } }
-@media only screen and (max-width: 770px) {
-  .order__form--sub {
     width: 100%; }
 
-  .contacts h4 {
-    font-size: 20px; } }
+  .navbar-header {
+    max-width: 100%;
+    padding: 0;
+    margin-left: 0; }
+
+  .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+    margin-left: 0; } }
 .footer {
   display: block;
   float: left;

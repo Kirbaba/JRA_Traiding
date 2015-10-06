@@ -267,7 +267,6 @@
 	&--text {
 		display: block;
 		width: 100%;
-		line-height: 36px;
 		height: 36px;
 		padding: 0 15px;
 		margin: 50px 0 20px;
@@ -298,7 +297,25 @@
 	}
 }
 
-@media only screen and (max-width: 400px) {
+
+
+@media only screen and (max-width: 770px) {
+	.order__form--sub {
+		width: 100%;
+	}
+
+	.contacts { 
+		h4 {
+			font-size: 20px;
+		}
+	}
+	.navbar-header {
+		max-width: 30%;
+		padding-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
    	
 	.services--desc-1 {
 		&:before {
@@ -342,18 +359,14 @@
 	.order__form--sub {
 		width: 100%;
 	}
-	
+	.navbar-header {
+		max-width: 100%;
+		padding: 0;
+		margin-left: 0;
+	}
+
+	.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+		margin-left: 0;
+	}
   
-}
-
-@media only screen and (max-width: 770px) {
-	.order__form--sub {
-		width: 100%;
-	}
-
-	.contacts { 
-		h4 {
-			font-size: 20px;
-		}
-	}
 }
