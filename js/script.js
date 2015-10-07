@@ -118,6 +118,16 @@ jQuery(document).ready(function($) {
         $('.services--desc').css('height', $(this).height());
     });
 
+    var ab = $('.about');
+    var head =$('.header')
+
+    head.each(function(){
+        var h = $(this).height(); 
+        if ($(this).width()>=500) {       
+            ab.css("margin-top", h + 90);
+        }
+    });
+
 });
 
 $(function(){
@@ -125,4 +135,3 @@ $(function(){
         $(this).fadeIn("slow");
     });
 });
-

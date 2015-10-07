@@ -1,11 +1,17 @@
 .header {
-	padding: 90px 0;
+	padding: 90px 0 0;
 	background-image: url('../img/head_bg.png');
 	-webkit-background-size: cover;
 	     -o-background-size: cover;
 	        background-size: cover;
 	    background-repeat: no-repeat;
 	    background-position: 50% 50%;
+	   //height: 100%;
+	    width: 100%;
+	    position: fixed;
+	    z-index: 1;	 
+        display: block;
+    	float: left;   
 	&__logo {
 		img {
 			display: block;
@@ -32,7 +38,7 @@
 		}
 	}
 	&__tittle {
-		margin: 150px 0;
+		margin: 150px 0 180px;
 		h1 {
 			text-align: center;
 			color: #fff;

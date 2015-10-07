@@ -91,7 +91,7 @@
 					<h1 class="block_title">About company</h1>
 					<h3 class="block_descript">Our customers trust us and, therefore, earn with us.</h3>
 				</div>
-
+			
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="about__desc">
 						<div class="col-lg-9 col-md-9 col-lg-offset-3 col-md-offset-3 col-sm-12 col-xs-12">
@@ -113,7 +113,7 @@
 						</div>
 					</div>
 				</div>
-	
+
 		</section>
 		
 		
@@ -125,9 +125,9 @@
 				<h3 class="block_descript">All services of the service are divided into four main divisions,
 				click on the section you are interested. Welcome to China!</h3>
 				<div class="services__box">
-					<div class="row">
+					
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-							<div class="row">
+							<div class="row services-search">
 								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p0">
 									<img src="<?php bloginfo('template_directory'); ?>/img/11.png" alt="">
 								</div>
@@ -143,7 +143,7 @@
 									  </div>
 								</div>
 							</div>
-							<div class="row">
+							<div class="row services-place">
 								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 									<div class="services--desc services--desc-2">
 										<h4><b class="green">P</b>lace order</h4>
@@ -157,7 +157,7 @@
 							</div>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 p0">
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p0">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p0 services-quality">
 								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0">
 									<img src="<?php bloginfo('template_directory'); ?>/img/13.png" alt="">
 								</div>
@@ -169,7 +169,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p0">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p0 services-shipping">
 								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 									<div class="services--desc services--desc-4">
 										<h4><b class="green">S</b>hipping</h4>
@@ -182,7 +182,7 @@
 								</div>								
 							</div>
 						</div>
-					</div>
+					
 				</div>
 			</div>				
 		</section>
