@@ -137,7 +137,17 @@ float: left;
 		// }
 		
 	}
-	&-search:hover  {		
+	&-search:hover  {	
+		.oh {
+			img {
+				@include transition(0.5s);
+				-webkit-transform: scale(1.2);
+				   -moz-transform: scale(1.2);
+				    -ms-transform: scale(1.2);
+				     -o-transform: scale(1.2);
+				        transform: scale(1.2);
+			}
+		}
 		.services--desc {
 			&-1{
 				@include transition(0.5s);
@@ -156,7 +166,17 @@ float: left;
 			}
 		}
 	}
-	&-place:hover  {		
+	&-place:hover  {	
+		.oh {
+			img {
+				@include transition(0.5s);
+				-webkit-transform: scale(1.2);
+				   -moz-transform: scale(1.2);
+				    -ms-transform: scale(1.2);
+				     -o-transform: scale(1.2);
+				        transform: scale(1.2);
+			}
+		}	
 		.services--desc {
 			&-2 {
 				&:before {
@@ -174,7 +194,17 @@ float: left;
 			}
 		}
 	}
-	&-quality:hover  {		
+	&-quality:hover  {
+		.oh {
+			img {
+				@include transition(0.5s);
+				-webkit-transform: scale(1.2);
+				   -moz-transform: scale(1.2);
+				    -ms-transform: scale(1.2);
+				     -o-transform: scale(1.2);
+				        transform: scale(1.2);
+			}
+		}		
 		.services--desc {
 			&-3 {
 				&:before {
@@ -193,6 +223,16 @@ float: left;
 		}
 	}
 	&-shipping:hover  {	
+		.oh {
+			img {
+				@include transition(0.5s);
+				-webkit-transform: scale(1.2);
+				   -moz-transform: scale(1.2);
+				    -ms-transform: scale(1.2);
+				     -o-transform: scale(1.2);
+				        transform: scale(1.2);
+			}
+		}
 		.services--desc {
 			&-4 {
 				&:before {

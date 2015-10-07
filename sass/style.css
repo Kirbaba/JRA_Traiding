@@ -127,6 +127,9 @@ b {
   visibility: visible !important;
   opacity: 1; }
 
+.oh {
+  overflow: hidden; }
+
 @media (min-width: 1200px) {
   .container {
     width: 1170px; } }
@@ -200,14 +203,15 @@ a#go_ben {
     font-size: 21px;
     font-weight: bold;
     text-shadow: 0 1px 2px rgba(0, 0, 1, 0.75);
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    line-height: 21px; }
   .header__contacts h3 {
     color: #fff;
     font-family: "HelveticaNeueCyrBold";
     font-size: 32px;
     font-weight: bold;
     text-shadow: 0 1px 2px rgba(0, 0, 1, 0.75);
-    margin: 0 0 10px; }
+    margin: 0; }
   .header__tittle {
     margin: 150px 0 180px; }
     .header__tittle h1 {
@@ -327,6 +331,17 @@ a#go_ben {
     	left: 30px;
     	z-index: 99;
     } */ }
+  .services-search:hover .oh img {
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); }
   .services-search:hover .services--desc-1 {
     -webkit-transition: all 0.5s linear;
     -moz-transition: all 0.5s linear;
@@ -344,6 +359,17 @@ a#go_ben {
       left: -30px;
       bottom: 30px;
       z-index: 99; }
+  .services-place:hover .oh img {
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); }
   .services-place:hover .services--desc-2:before {
     content: "";
     width: 0;
@@ -355,6 +381,17 @@ a#go_ben {
     right: -30px;
     top: 30px;
     z-index: 99; }
+  .services-quality:hover .oh img {
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); }
   .services-quality:hover .services--desc-3:before {
     content: "";
     width: 0;
@@ -366,6 +403,17 @@ a#go_ben {
     top: -15px;
     left: 30px;
     z-index: 99; }
+  .services-shipping:hover .oh img {
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); }
   .services-shipping:hover .services--desc-4:before {
     content: "";
     width: 0;
