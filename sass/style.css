@@ -270,7 +270,18 @@ a#go_ben {
   width: 100%;
   position: relative;
   z-index: 99;
-  background-color: #FFF; }
+  background-color: #FFF;
+  word-spacing: nowrap;
+  vertical-align: middle; }
+  .services:after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+  .services img {
+    max-width: 100%;
+    min-height: 100%;
+    vertical-align: middle; }
   .services__box {
     display: block;
     float: left;
@@ -284,8 +295,6 @@ a#go_ben {
     -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); }
-  .services img {
-    width: 100%; }
   .services p {
     font-size: 16px;
     text-align: center; }
