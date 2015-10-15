@@ -40,6 +40,7 @@
 					        <li><a href="#go_about" class="smoothScroll">About</a></li>
 					        <li><a href="#go_serv" class="smoothScroll">Services</a></li>
 					        <li><a href="#go_ben" class="smoothScroll">Benefits</a></li>
+					        <li><a href="#go_production" class="smoothScroll">Production</a></li>
 					        <li><a href="#go_cont" class="smoothScroll">Contacts</a></li>
 					        <li><a href="#" class="write_us" data-toggle="modal" data-target="#myModal">Write Us</a></li>  		       
 					      </ul>
@@ -282,6 +283,75 @@
 				</div>
 			</section>
 
+			<section class="services">			
+				<div class="container">
+					<a name="go_production" id="go_production"></a>
+					<h1 class="block_title">Production</h1>
+					<h3 class="block_descript">All production of the service are divided into four main divisions,
+					click on the section you are interested. Welcome to China!</h3>
+					<div class="services__box">
+						
+							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+								<div class="row services-search">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p0 oh">
+										<img src="<?php bloginfo('template_directory'); ?>/img/11.png" alt="">
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+										<div class="services--desc services--desc-1">
+											<h4><b class="blue">S</b>earch supplier</h4>
+											<p>For a given query criteria, we will help you find the
+											 right products and services in China and Southeast Asia,
+											  also collect comprehensive information about 
+											  manufacturers and products they provide, arrange 
+											  for the production of your logo.</p>
+											  <div class="arr"></div>
+										  </div>
+									</div>
+								</div>
+								<div class="row services-place">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+										<div class="services--desc services--desc-2">
+											<h4><b class="green">P</b>lace order</h4>
+											<p>In a small volume can buy products from various Chinese online stores or special retail markets. Because of the advantages of buying this way it is possible to note a large assortment of different products.</p>
+											<div class="arr"></div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p0 oh">
+										<img src="<?php bloginfo('template_directory'); ?>/img/12.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 p0">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p0 services-quality">
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0 oh">
+										<img src="<?php bloginfo('template_directory'); ?>/img/13.png" alt="">
+									</div>
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										<div class="services--desc services--desc-3">
+											<h4><b class="blue">Q</b>uality control</h4>
+											<p>This service is used for quality control of the production of raw materials, control of timely execution of orders, identification of marriage before the end of production of the entire consignment. </p>
+											<div class="arr"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p0 services-shipping">
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										<div class="services--desc services--desc-4">
+											<h4><b class="green">S</b>hipping</h4>
+											<p>The company provides container shipping . Through long-term relationships with shipping lines , the turned -based agency , we organize sea transport at a high level equal to international standards.</p>
+											<div class="arr"></div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0 oh">
+											<img class="services--img"src="<?php bloginfo('template_directory'); ?>/img/14.png" alt="">
+									</div>								
+								</div>
+							</div>
+						
+					</div>
+				</div>				
+			</section>
+
 			<section class="contacts">
 				<div class="container">
 					<a name="go_acont" id="go_cont"></a>
@@ -305,7 +375,6 @@
 								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 									<input type="text" class="contacts--input" placeholder="Email">
 								</div>
-
 							</div>
 							<div class="row">
 								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -314,10 +383,11 @@
 							</div>
 		                    
 		                    <div class="row">
-		                    <div class="col-lg-2 col-lg-offset-10 col-md-2 col-md-offset-10 col-sm-4 col-xs-4 col-sm-offset-8 col-xs-offset-8">
-		                    	<input type="submit" class="contacts--sub" value="Send"></div>  
+			                    <div class="col-lg-2 col-lg-offset-10 col-md-2 col-md-offset-10 col-sm-4 col-xs-4 col-sm-offset-8 col-xs-offset-8">
+			                    	<input type="submit" class="contacts--sub" value="Send">
+			                    </div>  
 		                    </div>
-		                    </div>
+		                    </div>	
 		                </form>
 		                </div>
 						</div>

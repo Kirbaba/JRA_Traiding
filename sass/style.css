@@ -153,6 +153,11 @@ a#go_ben {
   position: relative;
   top: -110px; }
 
+a#go_production {
+  display: block;
+  position: relative;
+  top: -100px; }
+
 .write_us {
   display: block;
   float: left;
@@ -171,6 +176,9 @@ a#go_ben {
 
 .modal-header {
   border-bottom: none; }
+
+div.wpcf7-validation-errors {
+  border: none; }
 
 .navigation {
   display: none;
