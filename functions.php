@@ -88,9 +88,7 @@ function getDataFromDb($tableName)
 //ADMIN MENU PAGES
 function admin_menu()
 {
-    add_menu_page('Services', 'Services', 'manage_options', 'services', 'servicesAdmin');
-    add_menu_page('Production', 'Production', 'manage_options', 'production', 'productionAdmin');
-    add_menu_page('Benefits', 'Benefits', 'manage_options', 'benefits', 'benefitsAdmin');
+    add_menu_page('Services', 'Services', 'manage_options', 'services', 'servicesAdmin');   
 }
 
 add_action('admin_menu', 'admin_menu');

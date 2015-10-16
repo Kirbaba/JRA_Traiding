@@ -51,3 +51,62 @@ div.wpcf7-validation-errors {
     border: none;
 }
 
+.slick-prev {
+    position: absolute;
+    left: -50px;
+    top: 25px;
+    width: 50px;
+    height: 125px;
+    background: rgba(0, 0, 0, 0);
+    background-image: url('../img/arr_left.png');
+    background-position: 50% 50%;
+    border: none;
+    outline: none;
+    background-repeat: no-repeat;
+
+}
+.slick-next {
+    position: absolute;
+    border: none;
+    outline: none;
+    right: -50px;
+    top: 25px;
+    width: 50px;
+    height: 125px;
+    background: rgba(0, 0, 0, 0);
+    background-image: url('../img/arr_right.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+}
+
+.slide-image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+     img {
+        display: block;
+        margin: 15px auto;
+    }
+}
+// .slide-date {
+//     p {
+//         font-size: 1.063em;
+//         color: #ffe898;
+//         font-style: italic;
+//     }
+// }
+// .slide-text {
+//     h4 {
+//         font-size: 1.688em;
+//         color: #fff; 
+//     }
+//     p {
+//         font-size: 1.063em;
+//         color: #fff;
+//     }
+// }
+.slick-slide {
+    outline: none;
+}
+

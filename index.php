@@ -139,7 +139,7 @@
 							</div>
 							<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
 								<div class="order__form">
-									<form action="">
+						<!-- 			<form action="">
 										<div class="row">
 											<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 												<input type="text" class="order__form--input" placeholder="Your name">
@@ -152,7 +152,8 @@
 												<input type="submit" class="order__form--sub" value="order now">
 											</div>
 										</div>
-									</form>
+									</form> -->
+									<?php echo do_shortcode("[contact-form-7 id='6' title='order']"); ?>
 								</div>
 								<small><i class="fa fa-lock"></i> * Your data will not be transferred</small>
 							</div>
@@ -216,7 +217,7 @@
 						<h4 class="al"><?php echo get_theme_mod('address1_textbox'); ?>    <?php echo get_theme_mod('phone1_textbox'); ?>   </h4>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 col-lg-offset-4 col-md-offset-4 col-sm-offset-2">
-						<h4 class="ar"><?php echo get_theme_mod('address2_textbox'); ?>    <?php echo get_theme_mod('phone2_textbox'); ?></h4>
+						<h4 class="ar"><?php echo get_theme_mod('address2_textbox'); ?><br><?php echo get_theme_mod('phone2_textbox'); ?></h4>
 					</div>
 					<h1 class="block_title">Contacts</h1>
 						<h3 class="block_descript">We are located in Guangzhou, the center of world production and trade. <br>
@@ -224,7 +225,7 @@
 						We very quickly get back to you :)</h3>
 						<div class="row contacts__animated">
 							<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-						<form action="#">
+						<!-- <form action="#">
 							<div class="row">
 								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 									<input type="text" class="contacts--input" placeholder="Your Name">								
@@ -245,13 +246,14 @@
 			                    </div>  
 		                    </div>
 		                    </div>	
-		                </form>
+		                </form> -->
+		                <?php echo do_shortcode("[contact-form-7 id='5' title='Message']"); ?>
 		                </div>
 						</div>
 					</div>
 			</section>
 
-			<div class="row">
+			<div>
 					<footer class="footer">
 
 
@@ -286,37 +288,12 @@
       </div>
       <div class="modal-body">
         <div class="row">
-						<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-					<form action="#">
-						<div class="row">
-							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-								<input type="text" class="contacts--input" placeholder="Your Name">								
-							</div>
-							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-								<input type="text" class="contacts--input" placeholder="Email">
-							</div>
-
-						</div>
-						<div class="row">
-							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-								<textarea class="contacts--text" row="1" placeholder="Message"></textarea>
-							</div>
-						</div>
-	                    
-	                    <div class="row">
-		                    <div class="col-lg-3 col-lg-offset-6 col-md-3 col-md-offset-7 col-sm-4 col-xs-4 col-sm-offset-4 col-xs-offset-4">
-		                    	<input type="submit" class="contacts--sub" value="Send">
-		                    </div>  
-		                     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
-		                    	<button type="button" class="btn btn-default contacts--sub" data-dismiss="modal">Close</button>
-		                    </div>
-	                    </div>
-		                   
-	                    </div>
-	                </form>
+				<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+					<?php echo do_shortcode("[contact-form-7 id='7' title='Message_modal']"); ?>
 	            </div>
     		</div>
   </div>
+</div>
 </div>
 <?php wp_footer(); ?>
 </body>

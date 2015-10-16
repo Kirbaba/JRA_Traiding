@@ -180,6 +180,43 @@ a#go_production {
 div.wpcf7-validation-errors {
   border: none; }
 
+.slick-prev {
+  position: absolute;
+  left: -50px;
+  top: 25px;
+  width: 50px;
+  height: 125px;
+  background: transparent;
+  background-image: url("../img/arr_left.png");
+  background-position: 50% 50%;
+  border: none;
+  outline: none;
+  background-repeat: no-repeat; }
+
+.slick-next {
+  position: absolute;
+  border: none;
+  outline: none;
+  right: -50px;
+  top: 25px;
+  width: 50px;
+  height: 125px;
+  background: transparent;
+  background-image: url("../img/arr_right.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+
+.slide-image {
+  width: 100%;
+  height: auto;
+  overflow: hidden; }
+  .slide-image img {
+    display: block;
+    margin: 15px auto; }
+
+.slick-slide {
+  outline: none; }
+
 .navigation {
   display: none;
   padding: 10px 0;
@@ -287,7 +324,6 @@ div.wpcf7-validation-errors {
     height: 100%;
     vertical-align: middle; }
   .services img {
-    max-width: 100%;
     min-height: 100%;
     vertical-align: middle; }
   .services__box {

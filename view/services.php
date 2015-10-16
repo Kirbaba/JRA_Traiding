@@ -1,7 +1,7 @@
 <div class="services__box">
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="row services-search">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p0 oh">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p0 oh services--img">
                 <img src="<?php echo $box['img1']; ?>" alt="">
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -20,14 +20,14 @@
                     <div class="arr"></div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p0 oh">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p0 oh services--img services--img">
                 <img src="<?php echo $box['img3']; ?>" alt="">
             </div>
         </div>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 p0">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p0 services-quality">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0 oh">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0 oh services--img">
                 <img src="<?php echo $box['img2']; ?>" alt="">
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0 oh">
-                <img class="services--img"src="<?php echo $box['img4']; ?>" alt="">
+                <img src="<?php echo $box['img4']; ?>" alt="">
             </div>
         </div>
     </div>
