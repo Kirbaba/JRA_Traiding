@@ -55,14 +55,14 @@
 							<div class="header__contacts">
 								<div class="row">
 									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-										<p>Hong Kong</p>
-										<h3>+852 60655860 </h3>
+										<p><?php echo get_theme_mod('address1_textbox'); ?></p>
+										<h3><?php echo get_theme_mod('phone1_textbox'); ?></h3>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-										<p>Mainland ( Guangzhou )</p>
-										<h3>+86 13640885511</h3>
+										<p><?php echo get_theme_mod('address2_textbox'); ?></p>
+										<h3><?php echo get_theme_mod('phone2_textbox'); ?></h3>
 									</div>
 								</div>
 							</div>
@@ -94,7 +94,7 @@
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<div class="about__desc">
 							<div class="col-lg-9 col-md-9 col-lg-offset-3 col-md-offset-3 col-sm-12 col-xs-12">
-								<p><?php echo get_post_field('post_content', 111); ?></p>
+								<?php echo get_post_field('post_content', 111); ?>
 <!--								<p>   The company "Low Cost Cargo" offers services to find suppliers in China, so you can establish business relationship with absolutely no risk of financial loss. </p>-->
 <!--								<p>Turning to us, every client when choosing a supplier from China can count on an individual approach, taking into account the requirements. Moreover, all actions are carried out in accordance with the laws of the countries.</p>-->
 <!--								<p>We also provide advice on methods of interaction with suppliers, trained competent staff of our company, taking into account the peculiarities of the domestic market. Independent collection of necessary information much more expensive than the payment of our services, since this work will require a staff of experts with knowledge of the laws of China and the principles of doing business in this country. Use our services and you will be able to save not only time, but also significant amounts of money.</p>-->
@@ -168,33 +168,7 @@
 	but thereis still several very important points:</h3>
 					<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
 						<div class="row">
-							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-								<div class="benefits__item">
-									<div class="benefits__item-icon">
-										<img src="<?php bloginfo('template_directory'); ?>/img/i1.png" alt="">
-									</div>
-									<h4>The head office of <br> service in China</h4>
-									<p>Guangzhou - a worldwide manufacturing center and our main area. In our database, tens of thousands of factories and proven suppliers, we are willing to share their experience and arrange for delivery from China.</p>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-								<div class="benefits__item">
-									<div class="benefits__item-icon">
-										<img src="<?php bloginfo('template_directory'); ?>/img/i4.png" alt="">
-									</div>
-									<h4>Legal security</h4>
-									<p>With Chinese suppliers , we conclude a contract for the supply of local and all norms of international law. We work in a legal framework, which reduces your risk to almost zero. JRA Trading - a reliable intermediary in China.</p>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-								<div class="benefits__item">
-									<div class="benefits__item-icon">
-										<img src="<?php bloginfo('template_directory'); ?>/img/i5.png" alt="">
-									</div>
-									<h4>Integrated services</h4>
-									<p>Our service is built this way: the more services you give us a service, the more time you can devote to your business. All the processes of service, prepared for the different levels of the company. FEA Outsourcing - it is profitable, safe and convenient!</p>
-								</div>
-							</div>
+							<?= do_shortcode('[benefits]'); ?>
 						</div>
 					</div>
 				</div>
@@ -231,66 +205,7 @@
 					<h1 class="block_title">Production</h1>
 					<h3 class="block_descript">All production of the service are divided into four main divisions,
 					click on the section you are interested. Welcome to China!</h3>
-					<div class="services__box">
-						
-							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-								<div class="row services-search">
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p0 oh">
-										<img src="<?php bloginfo('template_directory'); ?>/img/11.png" alt="">
-									</div>
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-										<div class="services--desc services--desc-1">
-											<h4><b class="blue">S</b>earch supplier</h4>
-											<p>For a given query criteria, we will help you find the
-											 right products and services in China and Southeast Asia,
-											  also collect comprehensive information about 
-											  manufacturers and products they provide, arrange 
-											  for the production of your logo.</p>
-											  <div class="arr"></div>
-										  </div>
-									</div>
-								</div>
-								<div class="row services-place">
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-										<div class="services--desc services--desc-2">
-											<h4><b class="green">P</b>lace order</h4>
-											<p>In a small volume can buy products from various Chinese online stores or special retail markets. Because of the advantages of buying this way it is possible to note a large assortment of different products.</p>
-											<div class="arr"></div>
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p0 oh">
-										<img src="<?php bloginfo('template_directory'); ?>/img/12.png" alt="">
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 p0">
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p0 services-quality">
-									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0 oh">
-										<img src="<?php bloginfo('template_directory'); ?>/img/13.png" alt="">
-									</div>
-									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-										<div class="services--desc services--desc-3">
-											<h4><b class="blue">Q</b>uality control</h4>
-											<p>This service is used for quality control of the production of raw materials, control of timely execution of orders, identification of marriage before the end of production of the entire consignment. </p>
-											<div class="arr"></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p0 services-shipping">
-									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-										<div class="services--desc services--desc-4">
-											<h4><b class="green">S</b>hipping</h4>
-											<p>The company provides container shipping . Through long-term relationships with shipping lines , the turned -based agency , we organize sea transport at a high level equal to international standards.</p>
-											<div class="arr"></div>
-										</div>
-									</div>
-									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0 oh">
-											<img class="services--img"src="<?php bloginfo('template_directory'); ?>/img/14.png" alt="">
-									</div>								
-								</div>
-							</div>
-						
-					</div>
+					<?= do_shortcode('[production]') ?>
 				</div>				
 			</section>
 
@@ -298,10 +213,10 @@
 				<div class="container">
 					<a name="go_acont" id="go_cont"></a>
 					<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
-						<h4 class="al">Hong Kong +852 60655860   </h4>
+						<h4 class="al"><?php echo get_theme_mod('address1_textbox'); ?>    <?php echo get_theme_mod('phone1_textbox'); ?>   </h4>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 col-lg-offset-4 col-md-offset-4 col-sm-offset-2">
-						<h4 class="ar">Guangzhou  +86 13640885511</h4>
+						<h4 class="ar"><?php echo get_theme_mod('address2_textbox'); ?>    <?php echo get_theme_mod('phone2_textbox'); ?></h4>
 					</div>
 					<h1 class="block_title">Contacts</h1>
 						<h3 class="block_descript">We are located in Guangzhou, the center of world production and trade. <br>
@@ -345,9 +260,9 @@
 							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 								<p>广州市海珠区宝岗大道中润田雅苑B602 <br>
 			B-602 , Runtian bldg , Baogang road , Haizhu district , Guangzhou , China</p>
-								<p>Hong Kong: +852 60655860  <br>
-			Mainland ( Guangzhou ): +86 13640885511</p>
-								<p>Email: inquiries@jraltd.net</p>
+								<p><?php echo get_theme_mod('address1_textbox'); ?>: <?php echo get_theme_mod('phone1_textbox'); ?>  <br>
+									<?php echo get_theme_mod('address2_textbox'); ?>: <?php echo get_theme_mod('phone2_textbox'); ?></p>
+								<p>Email: <?php echo get_theme_mod('mail_textbox'); ?></p>
 							</div>
 							<div class="col-lg-3 col-md-3 col-lg-offset-3 col-md-offset-3 col-sm-12 col-xs-12">
 								<div class="footer__logo">

@@ -12,6 +12,7 @@ function add_style()
     wp_enqueue_style('my-sass', get_template_directory_uri() . '/sass/style.css', array('my-bootstrap-extension'), '1');
     wp_enqueue_style('fotorama', get_template_directory_uri() . '/css/fotorama.css', array('my-bootstrap-extension'), '1');
     wp_enqueue_style('animate', get_template_directory_uri() . '/css/animate.css', array('my-bootstrap-extension'), '1');
+    wp_enqueue_style('slick', '//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css', array(), '1');
 }
 
 function add_script()
@@ -23,8 +24,7 @@ function add_script()
     wp_enqueue_script('my-bootstrap-extension', get_template_directory_uri() . '/js/bootstrap.js', array(), '1');
     wp_enqueue_script('my-script', get_template_directory_uri() . '/js/script.js', array(), '1');
     wp_enqueue_script('fotorama-js', get_template_directory_uri() . '/js/fotorama.js', array(), '1');
-
-
+    wp_enqueue_script('slick-js', '//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js', array(), '1');
 }
 
 function add_admin_script(){
@@ -95,8 +95,83 @@ function admin_menu()
 
 add_action('admin_menu', 'admin_menu');
 
-/*------------------------------------- SERVICES -----------------------------------*/
+/*-------------------------------THEME OPTIONS--------------------------------------*/
+add_action('customize_register', function($customizer){
+    /*Меню настройки контактов*/
+    $customizer->add_section(
+        'contacts_section',
+        array(
+            'title' => 'Contacts settings',
+            'description' => 'Contacts',
+            'priority' => 35,
+        )
+    );
 
+    $customizer->add_setting(
+        'address1_textbox',
+        array('default' => 'Hong Kong')
+    );
+    $customizer->add_setting(
+        'address2_textbox',
+        array('default' => 'Mainland ( Guangzhou )')
+    );
+    $customizer->add_setting(
+        'phone1_textbox',
+        array('default' => '+852 60655860')
+    );
+    $customizer->add_setting(
+        'phone2_textbox',
+        array('default' => '+86 13640885511')
+    );
+    $customizer->add_setting(
+        'mail_textbox',
+        array('default' => 'inquiries@jraltd.net')
+    );
+
+    $customizer->add_control(
+        'phone1_textbox',
+        array(
+            'label' => 'Phone 1',
+            'section' => 'contacts_section',
+            'type' => 'text',
+        )
+    );
+    $customizer->add_control(
+        'phone2_textbox',
+        array(
+            'label' => 'Phone 2',
+            'section' => 'contacts_section',
+            'type' => 'text',
+        )
+    );
+    $customizer->add_control(
+        'address1_textbox',
+        array(
+            'label' => 'Address 1',
+            'section' => 'contacts_section',
+            'type' => 'text',
+        )
+    );
+    $customizer->add_control(
+        'address2_textbox',
+        array(
+            'label' => 'Address 2',
+            'section' => 'contacts_section',
+            'type' => 'text',
+        )
+    );
+    $customizer->add_control(
+        'mail_textbox',
+        array(
+            'label' => 'Email',
+            'section' => 'contacts_section',
+            'type' => 'text',
+        )
+    );
+});
+/*------------------------------END THEME OPTIONS-----------------------------------*/
+
+/*------------------------------------- SERVICES -----------------------------------*/
 function servicesAdmin(){
     global $wpdb;
 
@@ -138,12 +213,35 @@ function srevicesShortcode(){
     $parser->render(TM_DIR . "/view/services.php", array('box' => $box[0]), true);
 }
 add_shortcode('services','srevicesShortcode');
-
 /*----------------------------------- END SERVICES ---------------------------------*/
 
 
-
 /*------------------------------------- BENEFITS -----------------------------------*/
+function benefitsShortcode(){
+    $args = array(
+        'post_type' => 'post',
+        'category_name' => 'benefits',
+        'post_status' => 'publish',
+        'posts_per_page' => 3);
+
+    $my_query = null;
+    $my_query = new WP_Query($args);
+
+    $parser = new Parser();
+    $parser->render(TM_DIR . '/view/benefits.php', ['my_query' => $my_query]);
+}
+add_shortcode('benefits','benefitsShortcode');
 /*----------------------------------- END BENEFITS ---------------------------------*/
+
 /*------------------------------------ PRODUCTION ----------------------------------*/
+function productionShortcode() {
+
+    $catId = get_category_by_slug( 'production' );
+    $catId = $catId->term_id;
+    $posts = get_posts(['numberposts'=>-1, 'category'=>$catId, 'order'=>'DESC']);
+
+    $parser = new Parser();
+    $parser->render(TM_DIR . '/view/production.php', ['posts'=>$posts]);
+}
+add_shortcode('production', 'productionShortcode');
 /*--------------------------------- END PRODUCTION ---------------------------------*/
