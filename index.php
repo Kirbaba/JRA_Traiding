@@ -94,13 +94,14 @@
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<div class="about__desc">
 							<div class="col-lg-9 col-md-9 col-lg-offset-3 col-md-offset-3 col-sm-12 col-xs-12">
-								<p>   The company "Low Cost Cargo" offers services to find suppliers in China, so you can establish business relationship with absolutely no risk of financial loss. </p>
-								<p>Turning to us, every client when choosing a supplier from China can count on an individual approach, taking into account the requirements. Moreover, all actions are carried out in accordance with the laws of the countries.</p>
-								<p>We also provide advice on methods of interaction with suppliers, trained competent staff of our company, taking into account the peculiarities of the domestic market. Independent collection of necessary information much more expensive than the payment of our services, since this work will require a staff of experts with knowledge of the laws of China and the principles of doing business in this country. Use our services and you will be able to save not only time, but also significant amounts of money.</p>
-								<p>Our company also offers a full range of freight services and ensure high-quality and reliable delivery of cargo regardless of its volume, weight and quantity. The company is also engaged in LowCostCargo consolidation, storage of goods in a warehouse, provides forwarding and brokerage services.</p>
-								<p>Export - export from this country (in this case China) various types of goods for use or sale in the foreign market, the buyer and export operations - is the operation associated with the export. The company provides a full range of services that optimizes the transportation of goods from China. Export operations - is a complex task, which is capable of solving our experts.</p>
-								<p>Having become reliable partners and good friends, let us open the possibility of this great country together!c</p>
-							</div>
+								<p><?php echo get_post_field('post_content', 111); ?></p>
+<!--								<p>   The company "Low Cost Cargo" offers services to find suppliers in China, so you can establish business relationship with absolutely no risk of financial loss. </p>-->
+<!--								<p>Turning to us, every client when choosing a supplier from China can count on an individual approach, taking into account the requirements. Moreover, all actions are carried out in accordance with the laws of the countries.</p>-->
+<!--								<p>We also provide advice on methods of interaction with suppliers, trained competent staff of our company, taking into account the peculiarities of the domestic market. Independent collection of necessary information much more expensive than the payment of our services, since this work will require a staff of experts with knowledge of the laws of China and the principles of doing business in this country. Use our services and you will be able to save not only time, but also significant amounts of money.</p>-->
+<!--								<p>Our company also offers a full range of freight services and ensure high-quality and reliable delivery of cargo regardless of its volume, weight and quantity. The company is also engaged in LowCostCargo consolidation, storage of goods in a warehouse, provides forwarding and brokerage services.</p>-->
+<!--								<p>Export - export from this country (in this case China) various types of goods for use or sale in the foreign market, the buyer and export operations - is the operation associated with the export. The company provides a full range of services that optimizes the transportation of goods from China. Export operations - is a complex task, which is capable of solving our experts.</p>-->
+<!--								<p>Having become reliable partners and good friends, let us open the possibility of this great country together!c</p>-->
+<!--							--></div>
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -124,66 +125,7 @@
 					<h1 class="block_title">Services</h1>
 					<h3 class="block_descript">All services of the service are divided into four main divisions,
 					click on the section you are interested. Welcome to China!</h3>
-					<div class="services__box">
-						
-							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-								<div class="row services-search">
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p0 oh">
-										<img src="<?php bloginfo('template_directory'); ?>/img/11.png" alt="">
-									</div>
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-										<div class="services--desc services--desc-1">
-											<h4><b class="blue">S</b>earch supplier</h4>
-											<p>For a given query criteria, we will help you find the
-											 right products and services in China and Southeast Asia,
-											  also collect comprehensive information about 
-											  manufacturers and products they provide, arrange 
-											  for the production of your logo.</p>
-											  <div class="arr"></div>
-										  </div>
-									</div>
-								</div>
-								<div class="row services-place">
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-										<div class="services--desc services--desc-2">
-											<h4><b class="green">P</b>lace order</h4>
-											<p>In a small volume can buy products from various Chinese online stores or special retail markets. Because of the advantages of buying this way it is possible to note a large assortment of different products.</p>
-											<div class="arr"></div>
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p0 oh">
-										<img src="<?php bloginfo('template_directory'); ?>/img/12.png" alt="">
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 p0">
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p0 services-quality">
-									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0 oh">
-										<img src="<?php bloginfo('template_directory'); ?>/img/13.png" alt="">
-									</div>
-									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-										<div class="services--desc services--desc-3">
-											<h4><b class="blue">Q</b>uality control</h4>
-											<p>This service is used for quality control of the production of raw materials, control of timely execution of orders, identification of marriage before the end of production of the entire consignment. </p>
-											<div class="arr"></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p0 services-shipping">
-									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-										<div class="services--desc services--desc-4">
-											<h4><b class="green">S</b>hipping</h4>
-											<p>The company provides container shipping . Through long-term relationships with shipping lines , the turned -based agency , we organize sea transport at a high level equal to international standards.</p>
-											<div class="arr"></div>
-										</div>
-									</div>
-									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0 oh">
-											<img class="services--img"src="<?php bloginfo('template_directory'); ?>/img/14.png" alt="">
-									</div>								
-								</div>
-							</div>
-						
-					</div>
+					<?= do_shortcode('[services]');?>
 				</div>				
 			</section>
 
