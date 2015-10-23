@@ -663,6 +663,27 @@ div.wpcf7-validation-errors {
     -o-transition: all 0.5s linear;
     transition: all 0.5s linear; }
 
+.prod {
+  padding: 90px 0;
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative;
+  z-index: 99;
+  background-color: #FFF;
+  word-spacing: nowrap;
+  vertical-align: middle; }
+  .prod:after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+  .prod img {
+    width: 100%;
+    height: auto; }
+  .prod .slide-image {
+    margin-bottom: 15px; }
+
 @media only screen and (max-width: 770px) {
   .order__form--sub {
     width: 100%; }

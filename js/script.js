@@ -159,6 +159,10 @@ jQuery(document).ready(function($) {
         $('.services--desc').css('height', $(this).height());
     });
 
+    $('.slide-image').each(function(){
+        $(this).css('height', $(this).width());
+    });
+
     var ab = $('.about');
     var head =$('.header')
 
