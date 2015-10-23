@@ -693,7 +693,25 @@ div.wpcf7-validation-errors {
 
   .navbar-header {
     max-width: 30%;
-    padding-top: 10px; } }
+    padding-top: 10px; }
+
+  .slick-slider {
+    position: relative;
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    margin: 0px 40px; }
+
+  .services__box {
+    width: 100%; } }
 @media only screen and (max-width: 480px) {
   .services-search .services--desc-1 {
     -webkit-transition: all 0.5s linear;
@@ -769,7 +787,13 @@ div.wpcf7-validation-errors {
     margin-left: 0; }
 
   .header {
-    position: relative; } }
+    position: relative; }
+
+  .service__box {
+    width: 100%; }
+
+  .order__form--input {
+    width: 100%; } }
 .footer {
   display: block;
   float: left;
